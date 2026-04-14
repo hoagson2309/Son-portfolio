@@ -124,7 +124,8 @@ a:hover {
 
     border: none; 
     border-radius: 10px;
-    transition: all 0.3s cubic-bezier(0.25, 1.3, 0.5, 1);;
+    transition: all 0.3s cubic-bezier(0.25, 1.3, 0.5, 1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .menu-links a {
@@ -498,7 +499,7 @@ footer p {
     transition-delay: 0.1s;
 }
 
-Scrolling effect like apple
+/* Scrolling effect like apple */
 section {
     will-change: transform, opacity;
 }
