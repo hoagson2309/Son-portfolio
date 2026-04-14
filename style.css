@@ -505,7 +505,7 @@ section {
 }
 
 
-/* wave
+/* wave mouse
 #bg-canvas {
     position: fixed;
     top: 0;
@@ -517,6 +517,8 @@ section {
     background: white; ///or remove for transparent 
 } */
 
+
+/* wavy line reactive */
 #bg-canvas {
     position: fixed;
     inset: 0;
@@ -526,4 +528,34 @@ section {
     pointer-events: none;
     background: #fff;
 }
+
+
+/* DOT TERRAIN 
+#bg-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: #ffffff;
+} */
+
+
+/* REACTIVE INK FOG FIELD
+#bg-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+
+    background: radial-gradient(circle at center, #ffffff, #f2f2f2);
+} */
+
+
+
+
+
 

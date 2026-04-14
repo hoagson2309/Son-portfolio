@@ -69,7 +69,7 @@ window.addEventListener("load", handleScroll);
 
 
 
-// // Reactive wave background
+/////////  REACTIVE MOUSE WAVE BACKGROUND
 // const canvas = document.getElementById("bg-canvas");
 // const ctx = canvas.getContext("2d");
 
@@ -138,6 +138,9 @@ window.addEventListener("load", handleScroll);
 //     waves.push(new Wave(touch.clientX, touch.clientY));
 // });
 
+
+
+/////// REACTIVE WAVY LINE BACKGROUND
 const canvas = document.getElementById("bg-canvas");
 const ctx = canvas.getContext("2d");
 
@@ -200,3 +203,143 @@ function draw() {
 }
 
 draw();
+
+
+
+/////////// DOT TERRAIN
+// const canvas = document.getElementById("bg-canvas");
+// const ctx = canvas.getContext("2d");
+
+// let w, h;
+
+// function resize() {
+//     w = canvas.width = window.innerWidth;
+//     h = canvas.height = window.innerHeight;
+// }
+// window.addEventListener("resize", resize);
+// resize();
+
+// // mouse
+// const mouse = { x: w / 2, y: h / 2 };
+
+// window.addEventListener("mousemove", (e) => {
+//     mouse.x = e.clientX;
+//     mouse.y = e.clientY;
+// });
+
+// // grid settings (IMPORTANT)
+// const gap = 18;        // spacing between dots
+// const size = 1.5;      // dot size
+
+// let time = 0;
+
+// function draw() {
+//     ctx.clearRect(0, 0, w, h);
+//     time += 0.01;
+
+//     for (let y = 0; y < h; y += gap) {
+//         for (let x = 0; x < w; x += gap) {
+
+//             // base wave height
+//             let z = Math.sin(x * 0.02 + time) * 10 +
+//                     Math.cos(y * 0.02 + time) * 10;
+
+//             // mouse distortion (pull effect)
+//             const dx = x - mouse.x;
+//             const dy = y - mouse.y;
+//             const dist = Math.sqrt(dx * dx + dy * dy);
+
+//             const force = Math.max(0, 1 - dist / 200);
+
+//             let mx = x + dx * force * 0.2;
+//             let my = y + dy * force * 0.2;
+
+//             // dot brightness based on height
+//             let brightness = 40 + z * 2;
+
+//             ctx.beginPath();
+//             ctx.arc(mx, my + z, size, 0, Math.PI * 2);
+
+//             ctx.fillStyle = `rgba(0,0,0,${0.15 + force * 0.2})`;
+//             ctx.fill();
+//         }
+//     }
+
+//     requestAnimationFrame(draw);
+// }
+
+// draw();
+
+
+///////// REACTIVE INK FOG FIELD
+// const canvas = document.getElementById("bg-canvas");
+// const ctx = canvas.getContext("2d");
+
+// let w, h;
+
+// function resize() {
+//     w = canvas.width = window.innerWidth;
+//     h = canvas.height = window.innerHeight;
+// }
+// window.addEventListener("resize", resize);
+// resize();
+
+// // mouse
+// const mouse = { x: w / 2, y: h / 2 };
+
+// window.addEventListener("mousemove", (e) => {
+//     mouse.x = e.clientX;
+//     mouse.y = e.clientY;
+// });
+
+// // particles
+// const particles = [];
+// const COUNT = 120;
+
+// function createParticle() {
+//     return {
+//         x: Math.random() * w,
+//         y: Math.random() * h,
+//         vx: (Math.random() - 0.5) * 0.3,
+//         vy: (Math.random() - 0.5) * 0.3,
+//         r: Math.random() * 2 + 1
+//     };
+// }
+
+// for (let i = 0; i < COUNT; i++) {
+//     particles.push(createParticle());
+// }
+
+// function animate() {
+//     ctx.clearRect(0, 0, w, h);
+
+//     for (let p of particles) {
+
+//         // mouse force
+//         let dx = mouse.x - p.x;
+//         let dy = mouse.y - p.y;
+//         let dist = Math.sqrt(dx * dx + dy * dy);
+
+//         let force = Math.max(0, 1 - dist / 250);
+
+//         // attraction (soft pull)
+//         p.x += p.vx + dx * force * 0.02;
+//         p.y += p.vy + dy * force * 0.02;
+
+//         // drift
+//         p.vx *= 0.99;
+//         p.vy *= 0.99;
+
+//         // draw
+//         ctx.beginPath();
+//         ctx.fillStyle = `rgba(60,60,60,${0.15 + force * 0.25})`;
+//         ctx.arc(p.x, p.y, p.r + force * 2, 0, Math.PI * 2);
+//         ctx.fill();
+//     }
+
+//     requestAnimationFrame(animate);
+// }
+
+// animate();
+
+
