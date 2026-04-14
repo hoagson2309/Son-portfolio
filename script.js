@@ -22,3 +22,4 @@ function revealOnScroll() {
 }
 
 window.addEventListener("DOMContentLoaded", revealOnScroll);
+
