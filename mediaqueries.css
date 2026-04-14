@@ -104,13 +104,13 @@
     }
 
 
-    /* Adding press and turn black while pressing for mobile */
+    /* download cv touch effect*/
     .btn.btn-color-2 {
         background: white;
         color: black;
         border: rgb(53,53,53) 0.1rem solid;
         -webkit-tap-highlight-color: transparent;
-        transition: all 0.5s ease;
+        transition: all 0.1s ease;
     }
 
     /* pressed state */
@@ -120,9 +120,7 @@
         transform: scale(0.97);
     }
 
-    /* =========================
-       FOOTER LINK PRESS EFFECT
-       ========================= */
+    /* footer link touch effect*/
 
     .nav-links li a {
         -webkit-tap-highlight-color: transparent;
