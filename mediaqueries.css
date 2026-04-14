@@ -98,4 +98,8 @@
     .text-container {
         text-align: justify;
     }
+    .contact-info-upper-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
