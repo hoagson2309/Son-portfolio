@@ -554,7 +554,15 @@ section {
     background: radial-gradient(circle at center, #ffffff, #f2f2f2);
 } */
 
+/* Magnetic button */
+.btn {
+    transition: transform 0.2s ease;
+    will-change: transform;
+}
 
+.btn:active {
+    transform: scale(0.96);
+}
 
 
 

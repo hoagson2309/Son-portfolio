@@ -342,4 +342,25 @@ draw();
 
 // animate();
 
+const buttons = document.querySelectorAll(".btn");
 
+buttons.forEach(btn => {
+    let rafId = null;
+
+    btn.addEventListener("mousemove", (e) => {
+        if (rafId) cancelAnimationFrame(rafId);
+
+        rafId = requestAnimationFrame(() => {
+            const rect = btn.getBoundingClientRect();
+
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            btn.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
+        });
+    });
+
+    btn.addEventListener("mouseleave", () => {
+        btn.style.transform = "translate(0, 0)";
+    });
+});
