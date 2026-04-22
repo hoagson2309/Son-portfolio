@@ -1,8 +1,8 @@
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
 This is my personal portfolio website built to showcase my projects, skills, and experience as a Computer Science student and aspiring software engineer.
 
-## 👤 About Me
+## About Me
 
 Hi, I'm **Son Cao**, a Computer Science student at Saxion University of Applied Sciences. I am passionate about building software and exploring **Artificial Intelligence, Machine Learning, and Deep Learning**.
 
@@ -10,7 +10,7 @@ I enjoy creating projects that combine problem-solving with real-world applicati
 
 ---
 
-## 🚀 Features
+## Features
 
 * Responsive design (works on desktop & mobile)
 * Clean and modern UI
@@ -22,7 +22,7 @@ I enjoy creating projects that combine problem-solving with real-world applicati
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **HTML5**
 * **CSS3 (Flexbox + Media Queries)**
@@ -30,7 +30,7 @@ I enjoy creating projects that combine problem-solving with real-world applicati
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 portfolio/
@@ -46,15 +46,15 @@ portfolio/
 
 ---
 
-## 📌 Projects Highlight
+## Projects Highlight
 
-* 📈 **NVDA Stock Price Prediction**
-* 🏠 **House Price Prediction**
-* ✋ **Hand Gesture Recognition**
+* **NVDA Stock Price Prediction**
+* **House Price Prediction**
+* **Hand Gesture Recognition**
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website uses media queries to ensure a smooth experience across:
 
@@ -64,15 +64,15 @@ The website uses media queries to ensure a smooth experience across:
 
 ---
 
-## 📬 Contact
+## Contact
 
-* 📧 Email: [chson230905@gmail.com](mailto:chson230905@gmail.com)
-* 💼 LinkedIn: [https://www.linkedin.com/in/son-cao-50ba24396/](https://www.linkedin.com/in/son-cao-50ba24396/)
-* 💻 GitHub: [https://github.com/hoagson2309](https://github.com/hoagson2309)
+* Email: [chson230905@gmail.com](mailto:chson230905@gmail.com)
+* LinkedIn: [https://www.linkedin.com/in/son-cao-50ba24396/](https://www.linkedin.com/in/son-cao-50ba24396/)
+* GitHub: [https://github.com/hoagson2309](https://github.com/hoagson2309)
 
 ---
 
-## 🎯 Future Improvements
+## Future Improvements
 
 * Add backend (contact form functionality)
 * Improve animations and UI interactions
@@ -81,12 +81,14 @@ The website uses media queries to ensure a smooth experience across:
 
 ---
 
-## ⭐️ Acknowledgment
+## Acknowledgment
 
 This portfolio is part of my journey to becoming a full-stack developer and AI engineer. More improvements coming soon!
 
 ---
 
-## 📄 License
+## License
 
-This project is open source and available under the MIT License.
+Copyright (c) 2026 Son Cao. All rights reserved.
+
+This project is not open source. No permission is granted to use, copy, modify, or distribute this software without explicit written consent from the author.
