@@ -564,6 +564,21 @@ section {
     transform: scale(0.96);
 }
 
+/* Evenly align github button */
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+}
 
+.details-container.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-
+.btn-container {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
